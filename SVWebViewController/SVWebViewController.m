@@ -186,8 +186,8 @@
                           self.backBarButtonItem,
                           fixedSpace,
                           self.forwardBarButtonItem,
-                          fixedSpace,
-                          self.actionBarButtonItem,
+                          //fixedSpace,
+                          //self.actionBarButtonItem,
                           nil];
         
         UIToolbar *toolbar = [[UIToolbar alloc] initWithFrame:CGRectMake(0.0f, 0.0f, toolbarWidth, 44.0f)];
@@ -206,8 +206,8 @@
                           flexibleSpace,
                           refreshStopBarButtonItem,
                           flexibleSpace,
-                          self.actionBarButtonItem,
-                          fixedSpace,
+                          //self.actionBarButtonItem,
+                          //fixedSpace,
                           nil];
         
         self.navigationController.toolbar.barStyle = self.navigationController.navigationBar.barStyle;
@@ -304,7 +304,11 @@
     }
 }
 
-- (void)doneButtonTapped:(id)sùender {
+- (void)doneButtonTapped:(id)sender {
+    [self dismissViewControllerAnimated:YES completion:NULL];
+}
+
+- (void)doneButtonClicked:(id)sender {
     [self dismissViewControllerAnimated:YES completion:NULL];
 }
 
