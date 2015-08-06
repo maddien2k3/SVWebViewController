@@ -180,7 +180,6 @@
         fixedSpace.width = 35.0f;
         
         NSArray *items = [NSArray arrayWithObjects:
-                          fixedSpace,
                           refreshStopBarButtonItem,
                           fixedSpace,
                           self.backBarButtonItem,
@@ -205,7 +204,6 @@
                           self.forwardBarButtonItem,
                           flexibleSpace,
                           refreshStopBarButtonItem,
-                          flexibleSpace,
                           //self.actionBarButtonItem,
                           //fixedSpace,
                           nil];
